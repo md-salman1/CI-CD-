@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... existing head content ... -->
+    <style>
+        /* TEMPORARY CONTACT & FOOTER STYLES - ADD TO CSS FILE */
+        .contact {
+            padding: 100px 0;
+            background: var(--bg-primary);
+        }
+        
+        .contact-content {
+            display: flex;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-info, .contact-form {
+            flex: 1;
+        }
+        
+        .contact-stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        
+        .stat-number {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .submit-btn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 102, 255, 0.3);
+        }
+        
+        .footer {
+            background: var(--bg-card);
+            padding: 60px 0 20px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- ... existing body content until tokens section ... -->
+
+    <!-- Fixed Tokens Section -->
+    <section id="tokens" class="tokens-section">
+        <div class="container">
+            <h2 class="section-title">Token Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card portfolio">
+                    <h3>Portfolio Value</h3>
+                    <div class="portfolio-value">$<span id="portfolio-value">25,847.50</span></div>
+                    <!-- ADDED PORTFOLIO CHANGE ELEMENT -->
+                    <div class="portfolio-change positive">+12.5% (24h)</div>
+                </div>
+                <div class="dashboard-card transactions">
+                    <h3>Recent Transactions</h3>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div class="tx-info">
+                                <span class="tx-type">Send</span>
+                                <span class="tx-amount">-0.5 ETH</span>
+                            </div>
+                            <div class="tx-status confirmed">Confirmed</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="tx-info">
+                                <span class="tx-type">Receive</span>
+                                <span class="tx-amount">+1.2 BTC</span>
+                            </div>
+                            <div class="tx-status pending">Pending</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card staking">
+                    <h3>Staking Rewards</h3>
+                    <div class="staking-info">
+                        <div class="staking-amount">15.7 ETH</div>
+                        <!-- FIXED STAKING REWARDS ELEMENT -->
+                        <div class="staking-rewards">+0.2 ETH earned</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... existing contact and footer sections ... -->
+</body>
+</html>
